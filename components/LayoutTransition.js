@@ -7,7 +7,7 @@ function LayoutTransition({ children, route, transition }) {
         key={route}
         initial={{ opacity: 0, x: 200 }}
         animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.25 }}
+        transition={{ duration: 0.1 }}
         exit={{ opacity: 0 }}
         className="bg-black h-screen text-white"
       >
