@@ -13,6 +13,9 @@ function Navbar() {
         <li>
           <Link href="/services">Services</Link>
         </li>
+        <li>
+          <Link href="/gallery">Gallery</Link>
+        </li>
       </ul>
     </nav>
   );

@@ -1,4 +1,4 @@
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence, motion, AnimateSharedLayout } from "framer-motion";
 
 const transitions = {
   left: {
@@ -21,16 +21,19 @@ const transitions = {
 function LayoutTransition({ children, route, transition = "default" }) {
   return (
     <AnimatePresence exitBeforeEnter>
-      <motion.div
-        initial={transitions[transition].initial}
-        animate={transitions[transition].animate}
-        transition={transitions[transition].transition}
-        key={route}
-        exit={{ opacity: 0 }}
-        className="bg-black h-screen text-white"
-      >
-        {children}{route}
-      </motion.div>
+      <AnimateSharedLayout>
+        <motion.div
+          initial={transitions[transition].initial}
+          animate={transitions[transition].animate}
+          transition={transitions[transition].transition}
+          key={route}
+          exit={{ opacity: 0 }}
+          className="bg-black h-screen text-white"
+        >
+          {children}
+          {route}
+        </motion.div>
+      </AnimateSharedLayout>
     </AnimatePresence>
   );
 }

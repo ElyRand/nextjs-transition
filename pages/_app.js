@@ -6,6 +6,7 @@ const transitions = {
   "/": "left",
   "/profile": "right",
   "/services": "left",
+  "/gallery": "right",
 };
 
 function MyApp({ Component, pageProps, router }) {
