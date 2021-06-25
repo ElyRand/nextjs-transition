@@ -5,12 +5,17 @@ import { motion } from "framer-motion";
 export const photos = [
   { id: 1, url: "https://source.unsplash.com/random" },
   { id: 2, url: "https://source.unsplash.com/random" },
-  { id: 3, url: "https://picsum.photos/200" },
+  { id: 3, url: "https://source.unsplash.com/random" },
+  { id: 4, url: "https://source.unsplash.com/random" },
+  { id: 5, url: "https://source.unsplash.com/random" },
+  { id: 6, url: "https://source.unsplash.com/random" },
+  { id: 7, url: "https://source.unsplash.com/random" },
+  { id: 8, url: "https://picsum.photos/200" },
 ];
 
 function Gallery() {
   return (
-    <div className="flex flex-wrap container mx-auto space-x-2">
+    <div className="grid grid-cols-2 md:grid-cols-4 container mx-auto gap-2">
       {photos.map(({ id, url }) => {
         return (
           <div key={id}>
