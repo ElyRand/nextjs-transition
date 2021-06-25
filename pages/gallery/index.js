@@ -16,14 +16,14 @@ function Gallery() {
           <div key={id}>
             <Link href={`/gallery/${id}`}>
               <a>
-                <motion.span layoutId={id}>
+                <motion.div layoutId={id}>
                   <Image
                     className="block cursor-pointer"
                     src={url}
                     width={200}
                     height={200}
                   />
-                </motion.span>
+                </motion.div>
               </a>
             </Link>
           </div>
