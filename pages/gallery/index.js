@@ -10,12 +10,12 @@ export const photos = [
   { id: 5, url: "https://source.unsplash.com/random" },
   { id: 6, url: "https://source.unsplash.com/random" },
   { id: 7, url: "https://source.unsplash.com/random" },
-  { id: 8, url: "https://picsum.photos/200" },
+  { id: 8, url: "https://picsum.photos/900" },
 ];
 
 function Gallery() {
   return (
-    <div className="grid grid-cols-2 md:grid-cols-4 container mx-auto gap-2">
+    <div className="h-screen grid grid-cols-2 md:grid-cols-4 container mx-auto gap-2">
       {photos.map(({ id, url }) => {
         return (
           <div key={id}>

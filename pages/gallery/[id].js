@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 
 function GalleryImage({ photo }) {
   return (
-    <motion.div layoutId={photo.id} className="container mx-auto h-1/2 w-1/2">
-      <Image src={photo.url} width={200} height={200} />
+    <motion.div layoutId={photo.id} className="container mx-auto ">
+      <Image src={photo.url} width={800} height={800} />
     </motion.div>
   );
 }

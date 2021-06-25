@@ -12,16 +12,16 @@ const transitions = {
     transition: { duration: 0.1 },
   },
   default: {
-    initial: { opacity: 0 },
+    initial: { opacity: 1 },
     animate: { opacity: 1 },
-    transition: { duration: 0.1 },
+    transition: { duration: 0 },
   },
 };
 
 function LayoutTransition({ children, route, transition = "default" }) {
   return (
     <AnimatePresence exitBeforeEnter>
-      <AnimateSharedLayout>
+      <AnimateSharedLayout type="switch">
         <motion.div
           initial={transitions[transition].initial}
           animate={transitions[transition].animate}
