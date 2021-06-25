@@ -21,7 +21,6 @@ export async function getStaticPaths() {
   };
 }
 export async function getStaticProps({ params }) {
-  console.log(params.id);
   return {
     props: {
       photo: photos.find(({ id }) => id == params.id),

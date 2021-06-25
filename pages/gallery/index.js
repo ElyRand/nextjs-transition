@@ -15,7 +15,7 @@ export const photos = [
 
 function Gallery() {
   return (
-    <div className="h-screen grid grid-cols-2 md:grid-cols-4 container mx-auto gap-2">
+    <div className="grid grid-cols-2 md:grid-cols-4 container mx-auto gap-2">
       {photos.map(({ id, url }) => {
         return (
           <div key={id}>

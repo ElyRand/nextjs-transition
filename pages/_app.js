@@ -11,7 +11,7 @@ const transitions = {
 
 function MyApp({ Component, pageProps, router }) {
   return (
-    <div className="bg-black overflow-hidden">
+    <div className="bg-black overflow-x-hidden">
       <LayoutTransition
         route={router.route}
         transition={transitions[router.route]}
