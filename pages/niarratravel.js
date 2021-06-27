@@ -1,9 +1,12 @@
+
+import Image from "next/image";
+
 const destinations = [];
 
 const TravelCard = () => {
   return (
     <div className="relative inset-0 w-[400px] h-[700px] p-8 border-gray-500 z-10 transition delay-150">
-      <img
+      <Image
         className="absolute inset-0 h-full w-full object-cover  transform transition-all duration-500  hover:rotate-[1deg] z-0 mix-blend-overlay filter brightness-90  hover:border-2"
         src="https://www.niarratravel.com/content/images/_800x800_crop_center-center_80_none/Victoria-Falls-River-Lodge-Zimbabwe-17.jpg?mtime=20210413155845&focal=63.94%25+69.68%25&tmtime=20210430110543"
         width={350}
