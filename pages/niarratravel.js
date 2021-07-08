@@ -30,7 +30,7 @@ const TravelCard = React.forwardRef(({ index }, ref) => {
           Victoria Falls..
         </p>
         <div className="flex justify-between mt-6 bg-transparent">
-          <button className="px-6 rounded-full border-2">Discover Trip</button>
+          <button className="button px-6 rounded-full border-2 pointer-events-auto focus:outline-none focus:border-4 focus:border-yellow-500">Discover Trip</button>
           <div className="flex flex-col items-center">
             <p className="text-xs">FROM</p>
             <p className="text-lg font-semibold">$7,304</p>
